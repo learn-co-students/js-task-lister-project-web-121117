@@ -9,15 +9,6 @@ const Task = (() => {
       this.description = description;
       this.priority = priority;
     }
-
-    render() {
-      let list = document.createElement("li");
-      list.append(`Task: ${this.description}`);
-      list.append(`Priority: ${this.priority}`);
-      let unordered = document.createElement("ul");
-      unordered.append(list);
-      lists.append(unordered);
-    }
   };
 })();
 
